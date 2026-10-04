@@ -1,5 +1,12 @@
 # webdav
 
+This Colorplane fork publishes the patched server as
+`ghcr.io/colorplane/webdav:latest` for Linux amd64, arm64, and arm/v7.
+Use that image in place of `ghcr.io/hacdias/webdav` in the commands below.
+Depth 1 listings reuse directory metadata within each request while preserving
+file opens and permission checks. Keep `noSniff: true` to avoid content sniffing.
+Commit-specific `sha-<full commit hash>` image tags are also published.
+
 [![Version](https://img.shields.io/github/release/hacdias/webdav.svg?style=flat-square)](https://github.com/hacdias/webdav/releases/latest)
 [![Docker Pulls](https://img.shields.io/docker/pulls/hacdias/webdav?style=flat-square)](https://hub.docker.com/r/hacdias/webdav)
 
